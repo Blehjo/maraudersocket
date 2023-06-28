@@ -1,7 +1,7 @@
 import { Socket } from "socket.io";
 import { router } from "./Routes";
 
-const http = require('http');
+const http = require('http'); 
 const socketIo = require('socket.io');
 const fs = require('fs');
 const events = require('events');
@@ -19,7 +19,7 @@ const server = http.createServer(app);
 
 const io = socketIo(server, {
     cors: {
-      origin: ["http://localhost:3001", "http://192.168.0.242:3001"],
+      origin: ["http://localhost:3001"],
       methods: ['GET', 'POST'],
     },
     maxHttpBufferSize: 1e8,
