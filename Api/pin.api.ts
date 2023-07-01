@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Pin } from '../Types/pin.type';
 
-const api = "https://planetnineserver.azurewebsites.net/api/pin";
+const api = "https://marauderserver.azurewebsites.net/api/pin";
 
 const headers = {
     'Accept': 'application/x-www-form-urlencoded',

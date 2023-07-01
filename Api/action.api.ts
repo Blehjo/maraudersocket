@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Action } from '../Types/action.type'
 
-const api = "https://planetnineserver.azurewebsites.net/api/action";
+const api = "https://marauderserver.azurewebsites.net/api/action";
 
 const headers = {
     'Accept': 'application/x-www-form-urlencoded',
