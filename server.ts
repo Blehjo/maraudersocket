@@ -46,8 +46,6 @@ const io = socketIo(server, {
 var board = new five.Board();
 
 board.on("ready", function() {
-    console.log('Arduino Online...');
-
     var pin = new five.Pin(2);
     pin.high();
 
@@ -62,15 +60,12 @@ board.on("ready", function() {
 });
 
 io.on('connection', function(socket: Socket) {
-    console.log('New client connected');
-
     socket.on('lightson', (arg) => {
-        console.log('lightson', arg);
         eventEmitter.emit('lightson')
     });
 
     socket.on('lightsoff', (arg) => {
-        console.log('lightsoff', arg);
+
         eventEmitter.emit('lightsoff')
     });
     

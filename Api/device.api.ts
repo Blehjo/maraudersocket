@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Device } from '../Types/device.type';
 
-const api = "https://marauderserver.azurewebsites.net/api/device";
+const api = "https://localhost:7144/api/devices";
 
 const headers = {
     'Accept': 'application/x-www-form-urlencoded',
