@@ -4,6 +4,6 @@ export type Pin = {
     pinId: number | null;
     pinLocation: string | null;
     isAnalog: boolean;
-    deviceId: number | null;
+    deviceId: string | null;
     actions: Action[];
 }
